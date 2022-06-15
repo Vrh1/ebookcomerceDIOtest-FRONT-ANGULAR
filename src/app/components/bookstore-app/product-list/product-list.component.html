@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col" *ngFor="let book of bookList">
+    <div class="card shadow-sm">
+      <img [src]="book.img" alt="" class="bd-placeholder-img card-img-top" width="100%">
+      <div class="card-body text-center">
+        <h5 class="card-text">{{ book.name }}</h5>
+        <p class="card-text">{{ book.price | currency:'BRL'}}</p>
+        <div class="btn-group">
+          <button type="button" class="btn btn-sm btn-primary m-1">Comprar</button>
+          <button type="button" class="btn btn-sm btn-outline-primary m-1">Detalhes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
